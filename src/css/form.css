@@ -2,8 +2,10 @@ body,
 form,
 label,
 input,
-button {
+button,
+textarea {
   margin: 0;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -25,10 +27,15 @@ label {
   margin-inline: auto;
   width: 408px;
   padding: 24px;
+}
+
+.feedback-input,
+.feedback-submit,
+.feedback-form label {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
+  font-size: inherit;
   letter-spacing: 0.04em;
-  color: #2e2f42;
 }
 
 .feedback-input {
@@ -37,7 +44,8 @@ label {
   border-radius: 4px;
   border: 1px solid #808080;
   width: 100%;
-  padding: 8px 16px;
+  padding: 7px 15px;
+  color: #2e2f42;
   transition: border-color 250ms linear;
 }
 
@@ -50,6 +58,7 @@ label {
 }
 
 .input-message {
+  height: 80px;
   resize: none;
 }
 
