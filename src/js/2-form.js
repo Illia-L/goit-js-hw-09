@@ -27,7 +27,7 @@ function handleSubmit(e) {
 
   if (!email || !message) return showMessage('Fill please all fields');
 
-  console.log(formData);
+  console.log({...formData});
   localStorage.clear();
   formData.email = '';
   formData.message = '';
